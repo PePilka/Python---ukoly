@@ -67,12 +67,6 @@ class Zoo:
 """
 
 
-#for predmet in school_report.values():
-    # vezmi znamku pricti ji do souctu
-    # soucet = soucet + znamka
-#    soucet_znamek += predmet
-
-
     def vaha_zvirat():
         vaha = 0
         for vaha in self.zvirata:
