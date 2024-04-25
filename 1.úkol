@@ -45,8 +45,8 @@ zamestnanci_dict = [
 ]
 
 class Reditel (Zamestnanec):
-    def __init__(self, cele_jmeno:str, rocni_plat:int, pozice:str ="reditel"):
-        super().__init__(oblibene_zvire=zvire)
+    def __init__(self, cele_jmeno:str, rocni_plat:int, pozice:str):
+        super().__init__(cele_jmeno:str, rocni_plat:int, pozice:"reditel", oblibene_zvire=zvire)
         
     def __str__(self):
         return f"Zamestnanec se jmenuje {self.cele_jmeno} pracuje jako {self.pozice} a jeho roční plat je {self.rocni_plat} Kč."
