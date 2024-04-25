@@ -22,8 +22,8 @@ zvirata_dict = [
 ]
 
 # NEVIM
-#for z1 in zvirata_dict:
-#    jmeno = Zvire(z1["jmeno"], z1["druh"], z1["vaha"])
+for x in zvirata_dict:
+    print(x["jmeno"], x["druh"], x["vaha"])
 
 class Zamestnanec:
     def __init__(self, cele_jmeno:str, rocni_plat:int, pozice:str):
