@@ -78,9 +78,16 @@ for x in seznam_zvirat:
 print(f"Celkova hmotnost zvirat je {celkova_vaha} Kg.")
 
 
-    def naklady():
-        naklady = 0
-        for zamestnanec in self.zamestnanci:
-            naklady += zamestnanec.naklady()
-        return naklady
+zam1 = Zamestnanec("Tereza Vysoka", 700_000, "Cvičiteka tygrů")
+zam2 = Zamestnanec("Anet Krasna", 600_000, "Cvičitelka vyder")
+zam3 = Zamestnanec("Martin Veliky", 650_000, "Cvičitel ledních medvědů")
+zam_rida = Zamestnanec("Karel reditel", 800_000,"reditel")
+seznam_zamestnancu = [zam1, zam2, zam3, zam_rida]
+
+rocni_plat_zam = 0
+for x in seznam_zamestnancu:
+    rocni_plat_zam += x.rocni_plat
+
+print(f"Celkový roční plat zaměstnanců je {rocni_plat_zam} Kč.")
+
 """
