@@ -43,3 +43,14 @@ zamestnanci_dict = [
     {'cele_jmeno': 'Anet Krasna', 'rocni_plat': 600_000, 'pozice': 'Cvičitelka vyder'},
     {'cele_jmeno': 'Martin Veliky', 'rocni_plat': 650_000, 'pozice': 'Cvičitel ledních medvědů'},
 ]
+
+class Reditel (Zamestnanec):
+    def __init__(self, cele_jmeno:str, rocni_plat:int, pozice:str ="reditel"):
+        super().__init__(oblibene_zvire=zvire)
+        
+    def __str__(self):
+        return f"Zamestnanec se jmenuje {self.cele_jmeno} pracuje jako {self.pozice} a jeho roční plat je {self.rocni_plat} Kč."
+
+
+zvire = Zvire()
+reditel = Reditel(jmeno='Karel', rocni_plat=800_000, oblibene_zvire=zvire)
