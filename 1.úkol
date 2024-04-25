@@ -8,7 +8,7 @@ class Zvire:
         return f"Zvire se jmenuje {self.jmeno} je to druh {self.druh} a váží {self.vaha} kg."
 
 
-   # def export_to_dict(): NEVIM
+   # def export_to_dict(): NEVIM VUBEC CO MAM DELAT OMG!!!!!
 
 
 
@@ -34,7 +34,7 @@ class Zamestnanec:
     def __str__(self):
         return f"Zamestnanec se jmenuje {self.cele_jmeno} pracuje jako {self.pozice} a jeho roční plat je {self.rocni_plat} Kč."
 
-    # NEVIM
+    # NEVIM JAK TO SPRAVNE ZAPSAT do def, kod samostatne funguje
     def ziskej_inicialy():
         return (cele_jmeno.split(" ")[0][0] + (".") + (cele_jmeno.split(" ")[1][0]))
 
@@ -63,11 +63,19 @@ class Zoo:
         self.reditel = reditel
         self.zamestnanci = zamestnanci
         self.zvirata = zvirata
+"""
+
+
+#for predmet in school_report.values():
+    # vezmi znamku pricti ji do souctu
+    # soucet = soucet + znamka
+#    soucet_znamek += predmet
+
 
     def vaha_zvirat():
         vaha = 0
-        for zvire in self.zvirata:
-            vaha += zvire.vaha
+        for vaha in self.zvirata:
+            vaha += zvire.vaha.values()
         return vaha
 
     def naklady():
@@ -75,3 +83,4 @@ class Zoo:
         for zamestnanec in self.zamestnanci:
             naklady += zamestnanec.naklady()
         return naklady
+"""
