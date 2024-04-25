@@ -54,3 +54,18 @@ class Reditel (Zamestnanec):
 
 zvire = Zvire()
 reditel = Reditel(jmeno='Karel', rocni_plat=800_000, oblibene_zvire=zvire)
+
+#NEVIM JAK TO PROVAZAT
+class Zoo:
+    def __init__(self, jmeno, adresa, reditel= Reditel, zamestnanci= List[Zamestnanec]), zvirata= List[Zvire]):
+        self.jmeno = jmeno
+        self.adresa = adresa
+        self.reditel = reditel
+        self.zamestnanci = zamestnanci
+        self.zvirata = zvirata
+
+    def vaha_zvirat():
+        vaha = 0
+        for zvire in self.zvirata:
+            vaha += zvire.vaha
+        return vaha
