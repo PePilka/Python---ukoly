@@ -38,3 +38,8 @@ class Zamestnanec:
     #def ziskej_inicialy():
     #    return self.cele_jmeno.split(" ")[0][0] + self.cele_jmeno.split(" ")[1][0]
 
+zamestnanci_dict = [
+    {'cele_jmeno': 'Tereza Vysoka', 'rocni_plat': 700_000, 'pozice': 'Cvičitelka tygrů'},
+    {'cele_jmeno': 'Anet Krasna', 'rocni_plat': 600_000, 'pozice': 'Cvičitelka vyder'},
+    {'cele_jmeno': 'Martin Veliky', 'rocni_plat': 650_000, 'pozice': 'Cvičitel ledních medvědů'},
+]
