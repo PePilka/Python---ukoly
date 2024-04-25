@@ -69,3 +69,9 @@ class Zoo:
         for zvire in self.zvirata:
             vaha += zvire.vaha
         return vaha
+
+    def naklady():
+        naklady = 0
+        for zamestnanec in self.zamestnanci:
+            naklady += zamestnanec.naklady()
+        return naklady
