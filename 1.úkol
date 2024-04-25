@@ -30,4 +30,6 @@ class Zamestnanec:
         self.cele_jmeno = cele_jmeno
         self.rocni_plat = rocni_plat
         self.pozice = pozice
-
+        
+    def __str__(self):
+        return f"Zamestnanec se jmenuje {self.cele_jmeno} pracuje jako {self.pozice} a jeho roční plat je {self.rocni_plat} Kč."
