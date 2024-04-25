@@ -20,3 +20,7 @@ zvirata_dict = [
     {'jmeno': 'Karlík', 'druh': 'Lední medvěd', 'vaha': 700},
 
 ]
+
+# NEVIM
+#for z1 in zvirata_dict:
+#    jmeno = Zvire(z1["jmeno"], z1["druh"], z1["vaha"])
