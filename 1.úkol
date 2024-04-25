@@ -8,8 +8,8 @@ class Zvire:
         return f"Zvire se jmenuje {self.jmeno} je to druh {self.druh} a váží {self.vaha} kg."
 
 
-   # def export_to_dict():
-    #    return 
+   # def export_to_dict(): NEVIM
+
 
 
 
