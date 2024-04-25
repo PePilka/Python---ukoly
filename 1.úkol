@@ -1,8 +1,22 @@
 class Zvire:
-    def __init__(self, jmeno:str, druh:str, vaha:int.)
+    def __init__(self, jmeno, druh, vaha):
         self.jmeno = jmeno
         self.druh = druh
         self.vaha = vaha
 
     def __str__(self):
-  
+        return f"Zvire se jmenuje {self.jmeno} je to druh {self.druh} a váží {self.vaha} kg."
+
+
+   # def export_to_dict():
+    #    return 
+
+
+
+zvirata_dict = [
+    {'jmeno': 'Růženka', 'druh': 'Panda Velká', 'vaha': 150},
+    {'jmeno': 'Vilda', 'druh': 'Vydra Mořská', 'vaha': 20},
+    {'jmeno': 'Matýsek', 'druh': 'Tygr Sumaterský', 'vaha': 300},
+    {'jmeno': 'Karlík', 'druh': 'Lední medvěd', 'vaha': 700},
+
+]
