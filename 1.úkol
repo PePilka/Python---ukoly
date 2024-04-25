@@ -65,13 +65,18 @@ class Zoo:
         self.zamestnanci = zamestnanci
         self.zvirata = zvirata
 """
+z1 = Zvire("Růženka","Panda Velká", 150)
+z2 = Zvire("Vilda", "Vydra Mořská", 20)
+z3 = Zvire("Matýsek", "Tygr Sumaterský", 300)
+z4 = Zvire("Karlik", "Lední medvěd", 700)
+seznam_zvirat = [z1, z2, z3, z4]
 
+celkova_vaha = 0
+for x in seznam_zvirat:
+    celkova_vaha += x.vaha
 
-    def vaha_zvirat():
-        vaha = 0
-        for vaha in self.zvirata:
-            vaha += zvire.vaha.values()
-        return vaha
+print(f"Celkova hmotnost zvirat je {celkova_vaha} Kg.")
+
 
     def naklady():
         naklady = 0
