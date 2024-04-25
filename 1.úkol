@@ -33,3 +33,8 @@ class Zamestnanec:
         
     def __str__(self):
         return f"Zamestnanec se jmenuje {self.cele_jmeno} pracuje jako {self.pozice} a jeho roční plat je {self.rocni_plat} Kč."
+
+    # NEVIM
+    #def ziskej_inicialy():
+    #    return self.cele_jmeno.split(" ")[0][0] + self.cele_jmeno.split(" ")[1][0]
+
