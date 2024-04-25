@@ -1,2 +1,8 @@
-print("hello")
+class Zvire:
+    def __init__(self, jmeno:str, druh:str, vaha:int.)
+        self.jmeno = jmeno
+        self.druh = druh
+        self.vaha = vaha
 
+    def __str__(self):
+  
