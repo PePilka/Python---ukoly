@@ -23,7 +23,8 @@ zvirata_dict = [
 
 # NEVIM
 for x in zvirata_dict:
-    print(x["jmeno"], x["druh"], x["vaha"])
+    seznamx = [x["jmeno"], x["druh"], x["vaha"]]
+    print(seznamx)
 
 class Zamestnanec:
     def __init__(self, cele_jmeno:str, rocni_plat:int, pozice:str):
