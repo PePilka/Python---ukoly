@@ -10,7 +10,10 @@ class Zvire:
 
    # def export_to_dict():  VUBEC NEVIM CO A JAK MAM DELAT OMG!!!!! :)
 
-
+#            return {
+#'nazev_atributu': self.nazev_atributu,
+#....
+#}
 
 
 zvirata_dict = [
@@ -21,10 +24,15 @@ zvirata_dict = [
 
 ]
 
-# NEVIM
-for x in zvirata_dict:
-    seznamx = [x["jmeno"], x["druh"], x["vaha"]]
-    print(seznamx)
+seznam_zvirat = []
+for zvire in zvirata_dict:
+    zvire = Zvire(zvire["jmeno"], zvire["druh"], zvire["vaha"])
+    seznam_zvirat.append(zvire)
+    print(seznam_zvirat)
+
+for zvire in seznam_zvirat:
+    zvire = Zvire(zvire.jmeno, zvire.druh, zvire.vaha)
+    print(zvire)
 
 class Zamestnanec:
     def __init__(self, cele_jmeno:str, rocni_plat:int, pozice:str):
