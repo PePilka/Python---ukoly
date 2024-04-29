@@ -7,13 +7,12 @@ class Zvire:
     def __str__(self):
         return f"Zvire se jmenuje {self.jmeno} je to druh {self.druh} a váží {self.vaha} kg."
 
-
-   # def export_to_dict():  VUBEC NEVIM CO A JAK MAM DELAT OMG!!!!! :)
-
-#            return {
-#'nazev_atributu': self.nazev_atributu,
-#....
-#}
+    def export_to_dict(self):
+        return {
+        "jmeno": self.jmeno,
+        "druh" : self.druh,
+        "vaha" : self.vaha,
+        }
 
 zvirata_dict = [
     {'jmeno': 'Růženka', 'druh': 'Panda Velká', 'vaha': 150},
@@ -28,9 +27,14 @@ for zvire in zvirata_dict:
     zvire = Zvire(zvire["jmeno"], zvire["druh"], zvire["vaha"])
     seznam_zvirat.append(zvire)
 
+
 for zvire in seznam_zvirat:
     zvire = Zvire(zvire.jmeno, zvire.druh, zvire.vaha)
     print(zvire)
+    #print(zvire.jmeno)
+
+    print(zvire.export_to_dict())
+
 
 class Zamestnanec:
     def __init__(self, cele_jmeno:str, rocni_plat:int, pozice:str):
