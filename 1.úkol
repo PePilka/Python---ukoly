@@ -43,9 +43,12 @@ class Zamestnanec:
     def __str__(self):
         return f"Zamestnanec se jmenuje {self.cele_jmeno} pracuje jako {self.pozice} a jeho roční plat je {self.rocni_plat} Kč."
 
-    # NEVIM JAK TO SPRAVNE ZAPSAT do def, kod samostatne funguje
-    def ziskej_inicialy():
-        return (cele_jmeno.split(" ")[0][0] + (".") + (cele_jmeno.split(" ")[1][0]))
+    def ziskej_inicialy(self):
+        return (self.cele_jmeno.split(" ")[0][0]) + (".") + (self.cele_jmeno.split(" ")[1][0])
+
+karel = Zamestnanec("Karel Novak", 30000, "programator")
+
+print(karel.ziskej_inicialy())
 
 zamestnanci_dict = [
     {'cele_jmeno': 'Tereza Vysoka', 'rocni_plat': 700_000, 'pozice': 'Cvičitelka tygrů'},
