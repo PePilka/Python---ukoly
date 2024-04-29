@@ -69,13 +69,17 @@ zvire = Zvire()
 reditel = Reditel(jmeno='Karel', rocni_plat=800_000, oblibene_zvire=zvire)
 
 #NEVIM JAK TO PROVAZAT
+
 class Zoo:
-    def __init__(self, jmeno, adresa, reditel= Reditel, zamestnanci= List[Zamestnanec]), zvirata= List[Zvire]):
+    def __init__(self, jmeno, adresa, reditel: Reditel, zamestnanci: List[Zamestnanec]), zvirata: List[Zvire]):
         self.jmeno = jmeno
         self.adresa = adresa
         self.reditel = reditel
         self.zamestnanci = zamestnanci
         self.zvirata = zvirata
+
+zoo = Zoo('Zoo Praha', 'Praha', reditel, [], [])
+
 """
 z1 = Zvire("Růženka","Panda Velká", 150)
 z2 = Zvire("Vilda", "Vydra Mořská", 20)
