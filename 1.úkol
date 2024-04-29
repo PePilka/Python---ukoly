@@ -15,7 +15,6 @@ class Zvire:
 #....
 #}
 
-
 zvirata_dict = [
     {'jmeno': 'Růženka', 'druh': 'Panda Velká', 'vaha': 150},
     {'jmeno': 'Vilda', 'druh': 'Vydra Mořská', 'vaha': 20},
