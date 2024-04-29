@@ -77,7 +77,7 @@ class Zoo:
         self.zamestnanci = zamestnanci
         self.zvirata = zvirata
 
-zoo = Zoo('Zoo Praha', 'Praha', reditel, [], [])
+zoo = Zoo('ZOO Praha', 'U Trojského zámku 3/120', reditel, zamestnanci, zvirata)
 
 """
 z1 = Zvire("Růženka","Panda Velká", 150)
