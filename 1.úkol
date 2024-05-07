@@ -80,6 +80,22 @@ class Zoo:
         self.zamestnanci = zamestnanci
         self.zvirata = zvirata
 
+    def vaha_vsech_zvirat_v_zoo(self):
+        # Tohle jsi mela mimo tridu tak jsem to presunula do metody
+        celkova_vaha = 0
+        for x in self.zvirata:
+            celkova_vaha += x.vaha
+        return celkova_vaha
+
+    def mesicni_naklady_na_zamestnance(self):
+        # TODO: tohle je treba trochu dodelat pridat plat reditele a vydělit 12
+        rocni_plat_zam = 0
+        for x in self.zamestnanci:
+            rocni_plat_zam += x.rocni_plat
+        return rocni_plat_zam
+
+    ###
+
 zoo = Zoo('ZOO Praha', 'U Trojského zámku 3/120', reditel, zamestnanci, zvirata)
 
 """
